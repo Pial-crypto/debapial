@@ -179,7 +179,7 @@ var myuid=FirebaseAuth.getInstance().uid
                 // println("Last Time: $lastTime, Last Message: $lastMessage")
             } else {
                 // Handle the case where there are no messages
-                println("No messages found.")
+                println("No messages found      fgsfada.")
                // addLinearLayoutToScrollView("no message")
             }
 
