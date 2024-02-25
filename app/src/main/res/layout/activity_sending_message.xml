@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/messaginglottie" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner's Info"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"
+        android:textSize="40dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewOwner"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="16dp"
+
+    />
+
+    <TextView
+        android:id="@+id/textViewOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:text="User's Name"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textViewOwnerlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:text="Location"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Send Message"
+
+        android:textColor="#ffffff" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/sendmsgpb"/>
+
+</LinearLayout>

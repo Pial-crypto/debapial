@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".regestration_almost_done">
+
+    <TextView
+        style="@style/Theme.Material3.Dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Almost there"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:typeface="monospace" />
+
+    <TextView
+        android:typeface="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Please enter the six-digit code that was sent to your device for verification"
+        android:textStyle="italic"
+        android:textColor="#0CC615"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="35dp"
+            android:id="@+id/cardView1"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:padding="40dp"
+            app:cardBackgroundColor="#209C26"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/code1"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_marginLeft="5dp"
+            android:id="@+id/cardView2"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            app:cardBackgroundColor="#209C26"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardView3"
+            app:layout_constraintStart_toEndOf="@+id/cardView1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/code2"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/cardView3"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            app:cardBackgroundColor="#209C26"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardView4"
+            app:layout_constraintStart_toEndOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/code3"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_marginLeft="5dp"
+            android:id="@+id/cardView4"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            app:cardBackgroundColor="#209C26"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardView5"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/code4"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_marginLeft="5dp"
+            android:id="@+id/cardView5"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            app:cardBackgroundColor="#209C26"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardView6"
+            app:layout_constraintStart_toEndOf="@+id/cardView4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/code5"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_marginLeft="5dp"
+            android:id="@+id/cardView6"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            app:cardBackgroundColor="#209C26"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardView7"
+            app:layout_constraintStart_toEndOf="@+id/cardView5"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/code6"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:typeface="monospace"
+        style="@style/Theme.Material3.Dark"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:text="Didn't receive any code?" />
+
+    <TextView
+        android:id="@+id/resend"
+        style="@style/Theme.Material3.Dark"
+        android:layout_width="134dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="5dp"
+        android:text="Resend again"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/gotoyouraccount"
+        android:onClick="backclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Create your account"
+        android:drawableLeft="@drawable/next"
+        android:backgroundTint="@color/teal_700"/>
+
+    <ProgressBar
+        android:id="@+id/pgbarofcreateaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+    <Button
+
+        android:id="@+id/gotoyourprofile"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Go to your profile"
+        android:drawableLeft="@drawable/next"
+        android:backgroundTint="@color/teal_700"/>
+
+    <Button
+        android:id="@+id/back"
+android:onClick="backclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Back"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:backgroundTint="@color/teal_700"/>
+
+</LinearLayout>

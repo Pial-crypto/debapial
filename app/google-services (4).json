@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "515003874919",
+    "project_id": "book-exchange-e1bae",
+    "storage_bucket": "book-exchange-e1bae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515003874919:android:357a40561caa334e6edec2",
+        "android_client_info": {
+          "package_name": "com.hassanpial.our_1st_project_of_book_exchange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515003874919-ts94v850vm2ik48ubhc89519qql6djlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hassanpial.our_1st_project_of_book_exchange",
+            "certificate_hash": "dccced807b2ff9da9c14be8b85ba294a4bfebc23"
+          }
+        },
+        {
+          "client_id": "515003874919-pcpt9dk5vc6tduk4cvfokc3mhg3k2asj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCit9fvFlwPW0YDAS6QF-T2RytlmwtQ0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515003874919-pcpt9dk5vc6tduk4cvfokc3mhg3k2asj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

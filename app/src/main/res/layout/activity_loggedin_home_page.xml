@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+
+    android:id="@+id/dl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loggedin_home_page">
+
+    <LinearLayout
+
+        android:id="@+id/mainll"
+        android:orientation="vertical"
+android:background="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/black"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/nav_toolbar"
+            />
+
+
+
+<LinearLayout
+    android:weightSum="3"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView    android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_weight="1"
+        android:layout_margin="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notification"
+/>
+
+
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/message"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_weight="1"
+        android:layout_margin="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/message"
+        />
+
+
+    <ImageView    android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:id="@+id/search"
+        android:layout_weight="1"
+        android:layout_margin="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        />
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginLeft="30sp"
+        style="@style/Theme.Material3.Dark"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today's activity"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/newrecruit"
+            android:clickable="true"
+            style="@style/Theme.Material3.Dark"
+            android:layout_width="135dp"
+            android:layout_height="103dp"
+            android:layout_weight="1"
+            android:background="#18CC21"
+            android:padding="17dp"
+            android:text="New \nRecruit"
+android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="103dp"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:orientation="horizontal"
+            android:padding="17dp">
+
+            <TextView
+                style="@style/Theme.Material3.Dark"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="256 "
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Theme.Material3.Dark"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:text="New\nRequests"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/received"
+            android:background="#D11313"
+android:layout_marginLeft="10dp"
+            style="@style/Theme.Material3.Dark"
+            android:textStyle="bold"
+
+            android:layout_weight="1"
+            android:layout_width="135dp"
+            android:layout_height="103dp"
+            android:padding="17dp"
+android:textSize="20dp"
+
+            android:text="241\nReceived" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_marginLeft="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Updates"
+            android:textSize="50dp"
+            style="@style/Theme.Material3.Dark"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:padding="16dp"
+            android:layout_gravity="center">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                android:layout_height="70dp"
+                android:layout_width="160dp">
+
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="Recent Posts"
+                    android:drawableLeft="@drawable/box"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginLeft="50dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="70dp"
+                android:layout_width="160dp">
+
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/box"
+                    android:text="Sell Review"
+                    android:textAllCaps="false" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="70dp"
+                android:layout_width="160dp">
+
+                <Button
+                    android:id="@+id/sell_faster"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/box"
+                    android:text="Sell faster"
+                    android:textAllCaps="false" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginLeft="50dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="30sp"
+                android:layout_height="70dp"
+                android:layout_width="160dp">
+
+                <Button
+                    android:id="@+id/exchange_book"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/box"
+                    android:text="Exchange Book"
+                    android:textAllCaps="false" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    
+
+
+</LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+android:fitsSystemWindows="false"
+
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation"
+
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

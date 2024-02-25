@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Our_1st_project_of_book_exchange"
+        tools:targetApi="31">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCMMn1FmVXpOh4ed27_xdYfneFXsdahaTY" />
+
+        <activity
+            android:name=".MapsActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_maps2" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/box" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/teal_200" />
+
+        <activity
+            android:name=".Viewing_reviews"
+            android:exported="false" />
+        <activity
+            android:name=".Review_in_1_page"
+            android:exported="false" />
+        <activity
+            android:name=".received_book"
+            android:exported="false" />
+        <activity
+            android:name=".received_messages"
+            android:exported="true" />
+        <activity
+            android:name=".chatting_page"
+            android:exported="false" />
+        <activity
+            android:name=".Ready_to_Sell_Book_List_for_me"
+            android:exported="false" />
+        <activity
+            android:name=".Exchangable_Book_List_for_me"
+            android:exported="false" />
+        <activity
+            android:name=".sending_message"
+            android:exported="false" />
+        <activity
+            android:name=".searching_book"
+            android:exported="true"
+            android:label="@string/title_activity_searching_book"
+            android:theme="@style/Theme.Our_1st_project_of_book_exchange" />
+        <activity
+            android:name=".book_uploading_page"
+            android:exported="true" />
+        <activity
+            android:name=".Editing_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loggedin_home_page"
+            android:exported="true" />
+        <activity
+            android:name=".client_review"
+            android:exported="true" />
+        <activity
+            android:name=".regestration_almost_done"
+            android:exported="false"
+            android:label="@string/title_activity_regestration_almost_done"
+            android:theme="@style/Theme.Our_1st_project_of_book_exchange" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Our_1st_project_of_book_exchange">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

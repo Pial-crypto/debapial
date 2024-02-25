@@ -1,0 +1,11 @@
+<!-- res/drawable/drawer_toggle_custom.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color for the toggle button -->
+    <item android:drawable="@color/black" />
+    <!-- Icon for the toggle button (hamburger icon) -->
+    <item
+        android:drawable="@drawable/next"
+        android:gravity="center"
+        android:width="48dp"
+        android:height="48dp" />
+</layer-list>
