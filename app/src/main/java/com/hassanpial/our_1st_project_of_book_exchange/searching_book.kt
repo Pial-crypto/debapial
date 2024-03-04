@@ -181,6 +181,7 @@ class searching_book : AppCompatActivity(),BookAdapter.OnItemClickListener {
 showExchangeDialog("exchange",book.picture.toString(),book.name,book.genre,book.owner,book.bookid,book.author,book)
 
 
+
         }
 
       else  if(book.status=="Available to Sell") {
@@ -195,7 +196,7 @@ showExchangeDialog("buy",book.picture.toString(),book.name,book.genre,book.owner
         else{
 
             Toast.makeText(this,"This book was sold",Toast.LENGTH_SHORT).show()
-showAlertDialog(book)
+//showAlertDialog(book)
         }
 
 
@@ -275,6 +276,8 @@ showAlertDialog(book)
                                                 bookedBooksReference.child(bookId.toString()).child("status").setValue("Already exchanged")
                                             }
                                         }
+
+
                                     }
                                 }
 
@@ -297,6 +300,7 @@ showAlertDialog(book)
 
 
                 startActivity(go_to_send_message)
+
 //showAlertDialog(book)
 
 

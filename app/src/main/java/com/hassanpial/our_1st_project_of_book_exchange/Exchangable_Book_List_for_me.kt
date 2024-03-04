@@ -5,7 +5,6 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.os.Looper
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -82,7 +81,7 @@ class Exchangable_Book_List_for_me : AppCompatActivity() , BookAdapter.OnItemCli
 
 
 
-        Handler(Looper.getMainLooper()).postDelayed({
+        Handler().postDelayed({
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = BookAdapter(allBooks)
 

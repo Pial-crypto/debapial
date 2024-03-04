@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
         auth = Firebase.auth
         signIn()
 
